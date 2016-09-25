@@ -1,0 +1,61 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.my_carousel {
+	width: 1030px;
+	margin: 0 auto;
+}
+
+.carousel_list {       /*tape for pictures*/
+	list-style: none;
+	width: 10000px;
+	padding: 0;
+	position: relative;
+}
+
+.carousel_element {    /*builds pictures in a line*/
+	display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel_element img {
+	max-width: 150px;
+}
+
+.carousel_overflow {    /*visible window*/
+    width: 850px;
+    overflow: hidden;
+    float: left;
+}
+
+/*styles for arrows*/
+
+.arrow_left,
+.arrow_right {
+	float: left;
+	display: block;
+    border: 1px solid blue;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+    width: 50px;
+}
+
+.arrow_left:hover,
+.arrow_right:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+
+.arrow_left {
+	margin-right: 25px;
+	padding-left: 11px;
+}
+
+.arrow_right {
+	margin-left: 25px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+	    <title>LoDash Template</title>
+
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+
+	    <script src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <script type="text/template" id="test">
+
+            <div class="border">
+
+            <!--template for text-->
+    
+                <h3>
+                    <%- name %>
+                </h3>
+
+            <!--template to generate the paragraph and insert the text with html-->
+
+                <% for (var i = 0; i < first.length; i++) { %>
+
+                    <p><%= first[i] %></p>
+
+                <% }; %> 
+
+                <ul>
+
+            <!--template to generate the items in the list and insert the text-->
+
+                    <% for (var i = 0; i < list.length; i++) { %>
+
+                    <li><%- list[i] %></li>
+
+                    <% }; %> 
+                    
+                </ul>
+
+            <!--template to generate the paragraph and insert the text with html-->
+
+                <% for (var i = 0; i < second.length; i++) { %>
+
+                    <p><%= second[i] %></p>
+
+                <% }; %>
+
+            </div>
+
+        </script>
+
+    </body>
+
+</html>
